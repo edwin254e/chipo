@@ -1,0 +1,505 @@
+body{
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font:15px/1.5;
+}
+
+
+
+/*global fstyle...*/
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*others*/
+.main_nav{
+  width: 100%;
+  background: #00316b;
+}
+.main_nav ul{
+  width: 80%;
+  margin: 0 auto;
+  padding: auto;
+}
+.main_nav ul li{
+  display:inline-block;
+  list-style: none;
+  padding: 20px;
+}
+.main_nav ul li:hover{
+background-color: #e91e63;
+}
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  background: #001f44;
+  text-align: right;
+  box-sizing: border-box;
+  color: #f1f1f1;
+  font-size: 30px;
+  display: none;
+}
+.whyUs{
+  height: 100vh auto;
+  background: #fff;
+  margin: 10px auto;
+}
+@media(max-width:768px){
+  .toggle{
+    display: block;
+  }
+ .main_nav ul{
+   width: 100%;
+   display: none;
+  }
+  .main_nav ul li{
+    display: block;
+    overflow: none;
+  }
+  .active{
+    display: block;
+  }
+}
+.overlay{
+    width: 0;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(109, 100, 100, 0);
+    background-color: rgba(44, 42, 42, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+}
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.verlay-content a{
+    text-decoration: none;
+ 
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #532424;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;}
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        
+      }
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+    .btn img{
+        width: 45px;
+       margin-left: 0;
+       
+      
+    }
+    .login{
+      margin: 100px auto;
+    }
+    .register{
+      margin: 20px auto;
+    }
+    .col-wrap{
+      opacity: 0.3;
+      margin: 15px auto;
+    }
+    .form-control{
+      background: transparent !important;
+      color: #f4f4f4 !important;
+      border-radius: 15px;
+      font-size: 15px;
+      border: 1px solid #10e7e7;
+    }
+  
+    .navbar form{
+      border-radius: none;
+      background-color:transparent !important;
+      box-shadow:none;
+    }
+    .navbar{
+      width: 100%;
+    }
+  
+    .homePage{
+      height: 100vh;
+      position: relative;
+      text-align: center;
+    }
+    .homeContent{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #726969;
+      padding: 20px;
+      opacity: 0.9;
+      color: #ecf1f3;
+      border-radius: 15px;
+    }
+    .homeContent a{
+      border-radius: 15px;
+    }
+    .images{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    .images img{
+     padding: 10px;
+     
+    }
+    .wrap{
+      background-image: url("images/landing.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
+      }
+   .aboutFrys{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .aboutFrys a{
+     text-decoration: none;
+     color: #ffff;
+     background: #681d46;
+     padding: 15px;
+     text-transform: uppercase;
+     font-weight: 600;
+     border-radius: 14px;
+   }
+   .aboutFrys a:hover{
+     background: #532424;
+   }
+  .commisions{
+    background: #ffffff;
+    margin: 10px auto;
+  }
+  .commisions h1{
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium';
+  }
+  .commisions .premium .card{
+    background: #773030;
+    color: #fff;
+
+  }
+  .commisions .premium .card a{
+    background: #4b4747;
+  }
+  .card{
+    height: 100vh auto;
+  }
+  .card ul li{
+    list-style: circle;
+  }
+  .card h2{
+    font-weight: 400;
+  }
+  .card h3{
+    font-weight: 900;
+    font-family: Impact;
+  }
+  .card p{
+    font-weight: 700;
+  }
+  .progres{
+    background: #110304;
+    margin: 100px auto;
+    height: 50vh auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+    
+  }
+  .contactUs{
+    background: url("images/landing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+    .error{
+      color: rgb(138, 111, 111);
+    }
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+
+      }
+      @media screen and (max-width: 968px) {
+        .overlay-content{
+display: none;
+        }
+        }
+        *{
+          margin:0;
+          padding:0;
+        }
+        
+        body{
+          margin:0;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size:15px;
+
+  
+          line-height:1.6;
+        }
+     
+        #showcase{
+          background-image:url('images/back.jpg');
+          background-size:cover;
+          background-position:center;
+          height:100vh;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          text-align:center;
+          padding:0 20px;
+          color: #ecf1f3;
+          z-index: -1;
+          width: 100%;
+        }
+        #showcase .showContent .text{
+          margin: 50px auto;
+        }
+        .dealers{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #140a0b;
+          margin: 15px auto;
+          color: #ffffff;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        .apply{
+          background: #cc3f3f;
+          text-align: center;
+          width: 250px !important;
+          color: #fff;
+          border-radius: 10px;
+          padding: 15px;
+        }
+        .apply h2{
+          font-family: sans-serif;
+          font-weight: 900;
+        } 
+        .apply a{
+          background: #1e1e1f;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 600;
+          padding: 10px;
+          font-family: sans-serif;
+          text-decoration: none;
+        }
+        .priceTag{
+          width: 350px;
+          height: 300px;
+          background: #dd9191;
+          color: #ffff;
+          border-radius: 60%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .price{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #showcase:before {
+          content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background:rgb(0, 2, 3);
+        opacity: .6; 
+        
+      }
+      .coupon{
+        background: #c94f4f;
+        width: 100%;
+        height:100%;
+        margin: 5px auto;
+        color: #e9f0ef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      padding: 20px;
+      }
+      .coupon h1{
+        font-family: 'Franklin Gothic Medium';
+        font-weight: 700;
+      }
+      .coupon .form-control{
+        width: 100%;
+        color: #9ff1e4 !important;
+      }
+      .coupon .btn{
+        background: #070808;
+      }
+      .coupon .btn:hover{
+        background: #393946;
+      }
+      .connect{
+        display: flex;
+        flex-direction: column;
+      }
+      .connect a{
+        text-decoration: none;
+        font-size: 15px;
+        color: #070808;
+        font-weight: 800;
+      }
+   .form-control{
+   border-radius: 0;
+   padding: 20px !important;
+   color: #010f0f !important;
+   font-size: 15px;
+   font-family: courier;
+   }
+   .btn{
+     background: #ca6262;
+     width: 100%;
+     padding: 10px;
+     text-transform: uppercase;
+     font-weight: 800;
+     border: none;
+   }
+   .btn:hover{
+     background: #070808;
+   }
+        #showcase h1{
+          font-size:50px;
+          line-height:1.2;
+        }
+        
+        #showcase p{
+          font-size:20px;
+        }
+        
+        #showcase .button{
+          font-size:18px;
+          text-decoration:none;
+          color:#e7e3df;
+          border:#27201a 1px solid;
+          padding:10px 20px;
+          border-radius:10px;
+          margin-top:20px;
+          background: #b40a0a;
+      
+        }
+        
+        #showcase .button:hover{
+          background:#c51e3a;
+          color:rgb(241, 233, 233);
+     
+  
+        }
+        
+        #section-a{
+          padding:20px;
+          background:#df4c4c;
+          color:rgb(22, 21, 21);
+          text-align:center;
+        }
+        
+    
+        #section-c .box-1, #section-c .box-3{
+          background:#926239;
+          color:#fff;
+        }
+        
+        #section-c .box-2{
+          background:#f9f9f9;
+        }
+        .services{
+          color: #141212;
+        
+          
+        }
+        .gallery img{
+padding: 10px;
+         height: 250px;
+         box-shadow: -5px 4px 8px 0 rgba(44, 40, 40, 0.2), 0 6px 20px 0 rgba(196, 163, 163, 0.19);
+
+        }
+        .gallery img:hover{
+          transform: scale(.5);
+          transition: .5s;
+          overflow: hidden !important;
+        }
+        @media(max-width:548px){
+          .gallery{
+            display: flex !important;
+            background: #1e1e1f;
+            color: #fff;
+          }
+        }
+        .whyUs{
+          padding: 10px;
+        }
+        .whyUs h2{
+         text-transform: capitalize;
+         color: #070808;
+         font-family: sans-serif;
+         font-weight: bold;
+        }
+      .whyUs p{
+        font-size: 16px;
+        width: 100%;
+        color: #27201a;
+      }
+        .services h2{
+          text-transform: uppercase;
+        color: #532424;
+        font-family: Impact;
+        text-decoration: underline;
+        }
+       
+     .mainFooter{
+       background: #070808;
+       color: #ffffff;
+       padding: 15px;
+       width: 100%;
+       margin: 0 auto;
+       margin-top: 10px;
+     }
+     @media(max-width: 768px){
+       .card{
+         margin:5px auto;
+         background-color: #e7e3df;
+       }
+       .services{
+         background-color: #e7e3df;
+       }
+     }
